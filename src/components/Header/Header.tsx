@@ -1,5 +1,4 @@
 import { FaReact } from "react-icons/fa";
-import { useState } from "react";
 import ExpandLessSharpIcon from "@mui/icons-material/ExpandLessSharp";
 import { Box, IconButton, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
