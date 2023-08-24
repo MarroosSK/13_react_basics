@@ -1,7 +1,7 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 //router
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import Home from "./pages/Home/Home";
 import Footer from "./components/Footer/Footer";
 

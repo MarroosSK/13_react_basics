@@ -1,4 +1,4 @@
-import { Box, Grid, Typography, Button, Container } from "@mui/material";
+import { Box, Typography, Button, Container } from "@mui/material";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { darcula } from "react-syntax-highlighter/dist/esm/styles/prism";
 import Title from "../Title/Title";
