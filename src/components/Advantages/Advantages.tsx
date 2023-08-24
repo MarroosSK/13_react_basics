@@ -1,38 +1,34 @@
-import { Grid, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import { tutorialAdvantages } from "../../helpers/tutorialAdvantages";
+import "./Advantages.css";
 const Advantages = () => {
   return (
-    <Grid container display="flex" justifyContent="center" alignItems="center">
+    <Box className="advantages__wrapper">
       {tutorialAdvantages.map((info) => (
-        <Grid
-          item
-          xs={12}
-          sm={6}
-          md={3}
-          key={info.id}
-          display="flex"
-          flexDirection="column"
-          justifyContent="center"
-          alignItems="center"
-          maxWidth="400px"
-          margin="20px"
-          gap="8px"
-        >
-          <img src={info.image} width="250px" height="250px" />
-          <Typography variant="h5" fontWeight="bold">
+        <Box className="advantages__box">
+          <img src={info.image} width="320px" height="320px" />
+          <Typography
+            variant="h2"
+            fontWeight="bold"
+            fontSize="2rem"
+            color="#1976d2"
+            textAlign="center"
+          >
             {info.title}
           </Typography>
           <Typography
             variant="body1"
             fontSize="15px"
             maxWidth="300px"
+            color="#1976d2"
             textAlign="center"
+            marginTop="16px"
           >
             {info.text}
           </Typography>
-        </Grid>
+        </Box>
       ))}
-    </Grid>
+    </Box>
   );
 };
 

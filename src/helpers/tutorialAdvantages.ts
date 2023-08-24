@@ -1,6 +1,6 @@
-import easyToUse from "../assets/1.png";
-import focus from "../assets/2.png";
-import poweredByReact from "../assets/3.png";
+import easyToUse from "../assets/1b.png";
+import focus from "../assets/2b.png";
+import poweredByReact from "../assets/3b.png";
 import { AdvantageTypes } from "../types/types";
 
 export const tutorialAdvantages: AdvantageTypes[] = [

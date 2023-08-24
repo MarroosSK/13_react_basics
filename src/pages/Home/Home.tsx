@@ -1,30 +1,50 @@
-import { Box, Grid, Typography } from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
 import TimerOutlinedIcon from "@mui/icons-material/TimerOutlined";
 import Title from "../../components/Title/Title";
 import Advantages from "../../components/Advantages/Advantages";
+import { Link } from "react-router-dom";
+import "./Home.css";
 
 const Home = () => {
   return (
-    <Grid display="flex" flexDirection="column">
-      <Box position="relative" className="heroPic">
-        <Box className="heroPic-text">
-          <Title text={"ReacTY - basics of React"} />
-          <Box
-            display="flex"
-            justifyContent="center"
-            alignItems="center"
-            gap="5px"
-            sx={{ flexDirection: { xs: "column", sm: "row" } }}
+    <Box className="home__wrapper">
+      <Box className="home__top">
+        <Title text={"ReacTY - basics of React"} />
+        <Box
+          display="flex"
+          justifyContent="center"
+          alignItems="center"
+          gap="10px"
+          sx={{ flexDirection: { xs: "column", sm: "row" } }}
+        >
+          <Typography
+            sx={{ fontSize: { xs: "22px", sm: "28px" }, lineHeight: "5px" }}
           >
-            <Typography>React Tutorial - 10 min</Typography>
-            <TimerOutlinedIcon />
-          </Box>
+            React Tutorial - 10 min
+          </Typography>
+          <TimerOutlinedIcon />
         </Box>
+        <Link to="/intro">
+          <Button
+            sx={{
+              width: "140px",
+              height: "45px",
+              backgroundColor: "#fff",
+              "&:hover": {
+                backgroundColor: "inherit",
+                color: "#fff",
+                border: "1px solid #fff",
+              },
+            }}
+          >
+            Let's Begin
+          </Button>
+        </Link>
       </Box>
-      <Box>
+      <Box className="home__bottom">
         <Advantages />
       </Box>
-    </Grid>
+    </Box>
   );
 };
 

@@ -3,13 +3,18 @@ import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 import "./Sidebar.css";
 
-const Sidebar = () => {
+const MiniSidebar = () => {
   return (
     <Box
       sx={{
-        flexDirection: { xs: "row", sm: "column" },
+        position: "fixed",
+        top: "0",
+        left: "0",
+        zIndex: 999,
+        width: "45%",
+        height: "70%",
       }}
-      className="sidebar__wrapper"
+      className="sidebar__wrapper_mini"
     >
       <Stack direction="column" sx={{ gap: "10px" }}>
         <motion.div whileHover={{ scale: 1.3, originX: 0 }}>
@@ -128,4 +133,4 @@ const Sidebar = () => {
   );
 };
 
-export default Sidebar;
+export default MiniSidebar;

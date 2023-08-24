@@ -16,6 +16,8 @@ const Footer = () => {
         },
         alignItems: "center",
         backgroundColor: "#1976d2",
+        paddingTop: "12px",
+        paddingBottom: "12px",
       }}
     >
       <Grid item xs={12} md={6} textAlign="center">
