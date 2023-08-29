@@ -3,7 +3,7 @@ import { IntroTypes, PostsTypes } from "../types/types";
 export const postslData: PostsTypes[] = [
   {
     id: 1,
-    title: "React - JSX",
+    title: "JSX",
     text: `JSX stands for JavaScript XML.
 
     JSX allows us to write HTML in React.
@@ -24,7 +24,7 @@ export const postslData: PostsTypes[] = [
   },
   {
     id: 2,
-    title: "React - Components",
+    title: "Components",
     text: `Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and return HTML.`,
     text1: "Example",
     code1: `class Car extends React.Component {
@@ -50,7 +50,7 @@ export const postslData: PostsTypes[] = [
   },
   {
     id: 3,
-    title: "React - Props",
+    title: "Props",
     text: `Props are arguments passed into React components.
 
     Props are passed to components via HTML attributes.`,
@@ -78,7 +78,7 @@ export const postslData: PostsTypes[] = [
   },
   {
     id: 4,
-    title: "React - Events",
+    title: "Events",
     text: `Just like HTML DOM events, React can perform actions based on user events.
 
     React has the same events as HTML: click, change, mouseover etc.`,
@@ -101,7 +101,7 @@ export const postslData: PostsTypes[] = [
   },
   {
     id: 5,
-    title: "React - Conditionals",
+    title: "Conditionals",
     text: `In React, you can conditionally render components.
 
     There are several ways to do this. We will check && and ternary operators.`,
@@ -135,7 +135,7 @@ export const postslData: PostsTypes[] = [
   },
   {
     id: 6,
-    title: "React - Hooks",
+    title: "Hooks",
     text: `Hooks allow function components to have access to state and other React features. Because of this, class components are generally no longer needed. We will look into 2 most use hooks, useState and useEffect`,
     text1: "Example",
     code1: `import { useState } from "react";

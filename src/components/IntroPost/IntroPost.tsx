@@ -21,11 +21,9 @@ const IntroPost = () => {
           marginBottom="70px"
           display="flex"
           flexDirection="column"
-          justifyContent="center"
-          alignItems="center"
           className="intro__wrapper"
         >
-          <Title text="Tutorial - Intro" />
+          <Title text="Intro" />
           <Box
             display="flex"
             flexDirection="column"
@@ -141,6 +139,7 @@ const IntroPost = () => {
                   },
                   display: "flex",
                   flexDirection: " column",
+                  marginTop: "20px",
                 }}
               >
                 <Typography>Start</Typography>

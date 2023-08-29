@@ -1,7 +1,6 @@
 import { Box, Typography, Button, Container } from "@mui/material";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { darcula } from "react-syntax-highlighter/dist/esm/styles/prism";
-import Title from "../Title/Title";
 import { postslData } from "../../helpers/tutorialData";
 import { useEffect } from "react";
 import "./Post.css";
@@ -20,7 +19,6 @@ const NextPost = () => {
       <Container>
         <Box
           marginTop="70px"
-          paddingTop="40px"
           marginBottom="70px"
           display="flex"
           flexDirection="column"
@@ -28,13 +26,11 @@ const NextPost = () => {
           alignItems="center"
           className="post__wrapper"
         >
-          <Title text="Tutorial - Basics" />
           <Box
             display="flex"
             flexDirection="column"
             justifyContent="center"
             alignItems="center"
-            marginTop={"50px"}
             maxWidth="600px"
           >
             <Box>

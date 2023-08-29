@@ -12,7 +12,7 @@ export const tutorialAdvantages: AdvantageTypes[] = [
   },
   {
     id: 2,
-    title: "Focus on What Matters",
+    title: "Focus on Important",
     text: "ReacTY brings you important parts of React. Go ahead and start learning.",
     image: focus,
   },

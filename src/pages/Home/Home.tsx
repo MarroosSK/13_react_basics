@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <Box className="home__wrapper">
       <Box className="home__top">
-        <Title text={"ReacTY - basics of React"} />
+        <Title text={"ReacTY"} />
         <Box
           display="flex"
           justifyContent="center"
@@ -18,9 +18,12 @@ const Home = () => {
           sx={{ flexDirection: { xs: "column", sm: "row" } }}
         >
           <Typography
-            sx={{ fontSize: { xs: "22px", sm: "28px" }, lineHeight: "5px" }}
+            sx={{
+              fontSize: { xs: "15px", sm: "19px" },
+              lineHeight: "36px",
+            }}
           >
-            React Tutorial - 10 min
+            Basics of React in 10 min
           </Typography>
           <TimerOutlinedIcon />
         </Box>

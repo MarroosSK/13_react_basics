@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 //router
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import { Box } from "@mui/material";
@@ -18,6 +18,7 @@ import Sidebar from "./components/Sidebar/Sidebar";
 import IntroPost from "./components/IntroPost/IntroPost";
 import { MiniMenuContext } from "./context/MiniMenuContext";
 import MiniSidebar from "./components/Sidebar/MiniSidebar";
+import Aos from "aos";
 
 const Layout = () => {
   return (
@@ -65,14 +66,30 @@ const Layout3 = () => {
         className="miniMenu__box"
       >
         {miniMenu ? (
-          <Box display="flex" sx={{ position: "relative", gap: "0.6rem" }}>
+          <Box
+            display="flex"
+            sx={{
+              position: "relative",
+              gap: "0.6rem",
+              backgroundColor: "#1976d2",
+              padding: "5px",
+            }}
+          >
             <CloseIcon
               onClick={handleMenuToggle}
               style={{ fontSize: "2.5rem" }}
             />
           </Box>
         ) : (
-          <Box display="flex" sx={{ position: "relative", gap: "0.6rem" }}>
+          <Box
+            display="flex"
+            sx={{
+              position: "relative",
+              gap: "0.6rem",
+              backgroundColor: "#1976d2",
+              padding: "5px",
+            }}
+          >
             <MenuIcon
               onClick={handleMenuToggle}
               style={{ fontSize: "2.5rem" }}
@@ -88,6 +105,9 @@ const Layout3 = () => {
 };
 
 function App() {
+  useEffect(() => {
+    Aos.init();
+  }, []);
   const router = createBrowserRouter([
     {
       path: "/",

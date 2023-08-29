@@ -5,8 +5,12 @@ const Advantages = () => {
   return (
     <Box className="advantages__wrapper">
       {tutorialAdvantages.map((info) => (
-        <Box className="advantages__box">
-          <img src={info.image} width="320px" height="320px" />
+        <Box
+          className="advantages__box"
+          data-aos="fade-up"
+          data-aos-duration="1100"
+        >
+          <img src={info.image} width="300px" height="300px" />
           <Typography
             variant="h2"
             fontWeight="bold"

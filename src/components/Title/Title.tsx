@@ -5,9 +5,8 @@ const Title = ({ text }: { text: string }) => {
     <Typography
       variant="h1"
       sx={{
-        fontSize: { xs: "42px", sm: "52px" },
+        fontSize: { xs: "2.5rem", sm: "3rem" },
         lineHeight: "65px",
-        textWrapper: "balance",
       }}
       textAlign="center"
     >

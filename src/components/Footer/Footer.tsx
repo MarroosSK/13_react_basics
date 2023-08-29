@@ -1,4 +1,4 @@
-import { Grid, IconButton, Stack, Typography } from "@mui/material";
+import { Box, Grid, IconButton, Stack, Typography } from "@mui/material";
 import fbIcon from "../../assets/facebook.png";
 import twitterIcon from "../../assets/twitter.png";
 import instagramIcon from "../../assets/instagram.png";
@@ -20,10 +20,28 @@ const Footer = () => {
         paddingBottom: "12px",
       }}
     >
-      <Grid item xs={12} md={6} textAlign="center">
-        <Typography fontSize="17px" sx={{ color: "#fff" }}>
-          ReacTY, basics of React.js
-        </Typography>
+      <Grid
+        item
+        xs={12}
+        md={6}
+        textAlign={"center"}
+        display="flex"
+        flexDirection="column"
+        justifyContent="center"
+        alignItems="center"
+        gap="10px"
+        marginTop="40px"
+      >
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "flex-start",
+          }}
+        >
+          <p style={{ color: "#a2c3e5", fontSize: "28px" }}>ReacTY</p>
+          <p>basics of React.js</p>
+        </Box>
       </Grid>
 
       <Grid
