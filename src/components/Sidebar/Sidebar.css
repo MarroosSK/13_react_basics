@@ -28,6 +28,7 @@
     background-color: #1976d2;
     border-radius: 8px;
     padding: 20px 35px;
+    overflow-y: scroll;
 }
 
 .overlay {
@@ -46,16 +47,5 @@
     }
     .sidebar__wrapper_mini{
         display: block;
-    }
-  }
-
-  @media only screen and (min-width: 780px) and (orientation: landscape) {
-    .sidebar__wrapper {
-      display: none; 
-    }
-  
-    .sidebar__wrapper_mini {
-      display: block; 
-      overflow-y: scroll;
     }
   }
