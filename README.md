@@ -6,7 +6,7 @@ React Basics app inspired in W3-School learning material for React. Purpose of t
 
 ## Screenshots
 
-![App Screenshot](https://i.postimg.cc/bN2RFCSH/13-basics.jpg)
+![App Screenshot](https://i.postimg.cc/xCzjGjtM/reacty-Pic.jpg)
 
 
 ## Authors
@@ -23,7 +23,7 @@ https://react-basics-chi.vercel.app/
 
 - MarkDown
 - Code Higlighter
-- Live preview
+- Responsive
 
 
 ## Tech Stack
@@ -45,10 +45,10 @@ I'm a react frontend developer working on my skills everyday.
 
 
 ## 🛠 Skills
-Javascript, Typescript, HTML, CSS, React, Express, Mysql, Postgres, Prisma
+Javascript, Typescript, HTML, CSS, React, Express, SQL (Postgre/Mysql), Prisma ORM
 
 
 ## Lessons Learned
 
-By building this project i've learned a lot about implementation of code highlighter.
+By building this project i've learned a lot about implementation of code highlighter, working with different layouts in react router dom and pagging.
 
